@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder - Villa Angelus</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <h1>Villa Angelus</h1>
+                <p class="subtitle">Provence, Frankrike</p>
+            </a>
+            <button class="menu-toggle" aria-label="Meny">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Hjem</a></li>
+                <li><a href="villa.html">Villaen</a></li>
+                <li><a href="husene.html">Husene</a></li>
+                <li><a href="fasiliteter.html">Fasiliteter</a></li>
+                <li><a href="bilder.html" class="active">Bilder</a></li>
+                <li><a href="omrade.html">Området</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Bildegalleri</h1>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="alle">Alle bilder</button>
+                <button class="filter-btn" data-filter="ute">Uteområde</button>
+                <button class="filter-btn" data-filter="hovedhus">Hovedhuset</button>
+                <button class="filter-btn" data-filter="studio">Studio</button>
+                <button class="filter-btn" data-filter="basseng">Basseng</button>
+                <button class="filter-btn" data-filter="omgivelser">Omgivelser</button>
+                <button class="filter-btn" data-filter="sesong">Sesongbilder</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Eksempelbilder - Bytt ut src med dine JPEG-bilder -->
+                <div class="gallery-item" data-category="ute">
+                    <img src="../images/hero.jpeg" alt="Utsyn over Villa Angelus">
+                </div>
+                
+                <div class="gallery-item" data-category="hovedhus">
+                    <img src="../images/Piscine1.jpeg" alt="Blått soverom">
+                </div>
+                
+                <div class="gallery-item" data-category="hovedhus">
+                    <img src="../images/Grande maison chambre 1.jpeg" alt="Hovedsoverom">
+                </div>
+                
+                <div class="gallery-item" data-category="hovedhus">
+                    <img src="../images/Grande maison salon 3.jpeg" alt="Stor stue">
+                </div>
+                
+                <div class="gallery-item" data-category="hovedhus">
+                    <img src="../images/Grande maison Cuisine piano.jpeg" alt="Kjøkken">
+                </div>
+                
+                <div class="gallery-item" data-category="studio">
+                    <img src="../images/Studio aesthetique.jpeg" alt="Studio interiør">
+                </div>
+                
+                <div class="gallery-item" data-category="studio">
+                    <img src="../images/Studio Sauna.jpeg" alt="Badstue">
+                </div>
+                
+                <div class="gallery-item" data-category="basseng">
+                    <img src="../images/Piscine2.jpeg" alt="Basseng og terrasse">
+                </div>
+                
+                <div class="gallery-item" data-category="basseng">
+                    <img src="../images/Fleur.jpeg" alt="Avslapping ved bassenget">
+                </div>
+                
+                <div class="gallery-item" data-category="ute">
+                    <img src="../images/Terrasse studio.jpeg" alt="Terrasse med møbler">
+                </div>
+                
+                <div class="gallery-item" data-category="ute">
+                    <img src="../images/Truffe.jpeg" alt="Grill og pizzaovn">
+                </div>
+                
+                <div class="gallery-item" data-category="ute">
+                    <img src="../images/Terrasse Studio:maison Soir.jpeg" alt="Boulebane">
+                </div>
+                
+                <div class="gallery-item" data-category="omgivelser">
+                    <img src="../images/Vignes.jpeg" alt="Vingårder">
+                </div>
+                
+                <div class="gallery-item" data-category="omgivelser">
+                    <img src="../images/Fruit de saison.jpeg" alt="Oliventre">
+                </div>
+                
+                <div class="gallery-item" data-category="sesong">
+                    <img src="../images/Marche de Lorgues.jpeg" alt="Lavendelfelt">
+                </div>
+                
+                <div class="gallery-item" data-category="ute">
+                    <img src="../images/Tomates exterieur.jpeg" alt="Port">
+                </div>
+                
+                <div class="gallery-item" data-category="omgivelser">
+                    <img src="../images/Four a pizza.jpeg" alt="Solnedgang">
+                </div>
+                
+                <div class="gallery-item" data-category="sesong">
+                    <img src="../images/cerises du jardin.jpeg" alt="Vinter i Provence">
+                </div>
+                
+                <div class="gallery-item" data-category="hovedhus">
+                    <img src="../images/Salon format tel.jpeg" alt="Spisestue">
+                </div>
+                
+                <div class="gallery-item" data-category="studio">
+                    <img src="../images/Studio cuisine.jpeg" alt="Studio kjøkken">
+                </div>
+            </div>
+            
+            <div class="gallery-info">
+                <p><i class="fas fa-info-circle"></i> Klikk på et bilde for å forstørre det. Bruk filterknappene for å se spesifikke kategorier.</p>
+            </div>
+            
+            <!-- Videoseksjon (valgfritt) -->
+            <div class="video-section">
+                <h3 class="section-title" style="font-size: 1.8rem; margin-top: 50px;">360° Visning</h3>
+                <div class="video-placeholder">
+                    <i class="fas fa-video" style="font-size: 4rem; color: var(--color-lavande); margin-bottom: 20px;"></i>
+                    <h4>Virtual Tour</h4>
+                    <p>Ta en virtuell tur gjennom Villa Angelus. (Video vil bli lagt til snart)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Villa Angelus</h3>
+                    <p>Flayosc / Lorgues<br>Provence, Frankrike</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Kontakt</h3>
+                    <p>Solveig Grau<br>
+                    +33 6 19 22 46 46<br>
+                    VillaAngelus83@gmail.com</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Hurtiglinker</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Hjem</a></li>
+                        <li><a href="husene.html">Husene</a></li>
+                        <li><a href="fasiliteter.html">Fasiliteter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Villa Angelus. Alle rettigheter forbeholdt.</p>
+                <p class="disclaimer">Informasjonsside - Ingen online bestilling. Kun direkte kontakt.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Bildefilter
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Fjern aktiv klasse fra alle knapper
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Legg til aktiv klasse på klikket knapp
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filtrer bilder
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'alle' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Tilpass bildeoppsett for mobil
+            function adjustGalleryForMobile() {
+                if (window.innerWidth < 768) {
+                    document.querySelectorAll('.gallery-item').forEach(item => {
+                        item.style.height = '200px';
+                    });
+                } else {
+                    document.querySelectorAll('.gallery-item').forEach(item => {
+                        item.style.height = '250px';
+                    });
+                }
+            }
+            
+            window.addEventListener('resize', adjustGalleryForMobile);
+            adjustGalleryForMobile();
+        });
+    </script>
+</body>
+</html>

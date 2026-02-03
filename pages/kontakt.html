@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Villa Angelus</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <h1>Villa Angelus</h1>
+                <p class="subtitle">Provence, Frankrike</p>
+            </a>
+            <button class="menu-toggle" aria-label="Meny">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Hjem</a></li>
+                <li><a href="villa.html">Villaen</a></li>
+                <li><a href="husene.html">Husene</a></li>
+                <li><a href="fasiliteter.html">Fasiliteter</a></li>
+                <li><a href="bilder.html">Bilder</a></li>
+                <li><a href="omrade.html">Området</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Kontakt & Bestilling</h1>
+        </div>
+    </header>
+
+    <section class="section">
+        
+        <div class="container">
+            <div class="contact-container">
+                <!-- Kontaktinformasjon -->
+                <div class="contact-info">
+                    <h3><i class="fas fa-address-card"></i> Vår Kontaktinformasjon</h3>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h4>Solveig Grau</h4>
+                            <p>Eier og vert</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+33 6 19 22 46 46</p>
+                            <p><small>(Fransk og norsk talende)</small></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-post</h4>
+                            <p>VillaAngelus83@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Villa Angelus<br>
+                            Kommunen Flayosc<br>
+                            (nærmere Lorgues)<br>
+                            Provence, Frankrike</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fab fa-airbnb"></i>
+                        <div>
+                            <h4>Airbnb</h4>
+                            <p>Studioet vårt er tilgjengelig på Airbnb</p>
+                            <a href="https://www.airbnb.com.mt/rooms/1255760500355099202" target="_blank" class="btn btn-small">
+                                Se vår Airbnb
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="availability-note">
+                        <h4><i class="fas fa-calendar-check"></i> Tilgjengelighet</h4>
+                        <p>Kontakt oss direkte for tilgjengelighet og bestilling. Vi svarer vanligvis innen 24 timer.</p>
+                    </div>
+                </div>
+                
+                <!-- Kontaktskjema -->
+                <div class="contact-form">
+                    <h3><i class="fas fa-paper-plane"></i> Send Oss en Melding</h3>
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Navn *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-post *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Emne *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Velg emne</option>
+                                <option value="availability">Tilgjengelighetsspørsmål</option>
+                                <option value="booking">Bestilling</option>
+                                <option value="information">Generell informasjon</option>
+                                <option value="service">Spørsmål om tjenester</option>
+                                <option value="other">Annet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="period">Ønsket Periode</label>
+                            <div class="date-inputs">
+                                <input type="text" id="arrival" name="arrival" placeholder="Ankomstdato" onfocus="(this.type='date')">
+                                <input type="text" id="departure" name="departure" placeholder="Avreisedato" onfocus="(this.type='date')">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Antall Gjester</label>
+                            <select id="guests" name="guests">
+                                <option value="">Velg antall</option>
+                                <option value="1-2">1-2 personer</option>
+                                <option value="3-4">3-4 personer</option>
+                                <option value="5-6">5-6 personer</option>
+                                <option value="6+">Mer enn 6</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Melding *</label>
+                            <textarea id="message" name="message" required placeholder="Skriv din melding her..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Melding
+                        </button>
+                        
+                        <p class="form-disclaimer"><small>* Obligatoriske felt. Dette skjemaet sender en e-post direkte til oss.</small></p>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Priser og betingelser -->
+            <div class="pricing-section">
+                <h3 class="section-title" style="font-size: 2rem; margin-top: 50px;">Priser og Betingelser</h3>
+                
+                <div class="pricing-table">
+                    <div class="pricing-item">
+                        <span>Lavsesong (utenom juli og august)</span>
+                        <span class="price">2 500 € per uke</span>
+                    </div>
+                    
+                    <div class="pricing-item">
+                        <span>Høysesong (juli og august)</span>
+                        <span class="price">3 000 € per uke</span>
+                    </div>
+                    
+                    <div class="pricing-item">
+                        <span>Sluttvask (obligatorisk)</span>
+                        <span class="price">250 €</span>
+                    </div>
+                    
+                    <div class="pricing-item">
+                        <span>Leie av sengetøy/håndklær</span>
+                        <span class="price">25 € per person</span>
+                    </div>
+                    
+                    <div class="pricing-item">
+                        <span>Depositum (returneres ved avreise)</span>
+                        <span class="price">300 €</span>
+                    </div>
+                </div>
+                
+                <div class="booking-conditions">
+                    <h4><i class="fas fa-file-contract"></i> Bestillingsvilkår</h4>
+                    <ul>
+                        <li><strong>Ankomst/Avreise:</strong> Lørdag (fleksibilitet på forespørsel utenom høysesong)</li>
+                        <li><strong>Betaling:</strong> 25% ved bestilling, resterende innen 4 uker før ankomst</li>
+                        <li><strong>Depositum:</strong> 300 € betales ved ankomst, returneres etter inspeksjon</li>
+                        <li><strong>Forsikring:</strong> Reiseforsikring anbefales på det sterkeste</li>
+                        <li><strong>Minimumsopphold:</strong> 1 uke i høysesong, 3 netter i lavsesong</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Viktig informasjon -->
+            <div class="important-section">
+                <h3 class="section-title" style="font-size: 2rem; margin-top: 50px;">Viktig Informasjon</h3>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-lock"></i>
+                        <h4>Sikkerhet</h4>
+                        <p>Porten må alltid være lukket. Bilene må låses og tømmes for verdisaker. Vi tar ikke ansvar for verdisaker.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Kapasitet</h4>
+                        <p>Maksimum 6 personer (4 i hovedhuset + 2 i studioet). Ingen arrangementer eller fester uten tillatelse.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-paw"></i>
+                        <h4>Dyr</h4>
+                        <p>Ingen kjæledyr tillatt. Vi har en hund i vårt område, men den er inngjerdet.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h4>Basseng</h4>
+                        <p>Barn må alltid overvåkes ved bassenget. Ingen barn alene ved bassenget.</p>
+                    </div>
+                </div>
+                
+                <div class="final-note">
+                    <h4><i class="fas fa-info-circle"></i> Merk</h4>
+                    <p>Full gjennomgang av huset og instruksjoner gis ved ankomst. En informasjonsmappe finnes i huset med all praktisk informasjon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Villa Angelus</h3>
+                    <p>Flayosc / Lorgues<br>Provence, Frankrike</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Kontakt</h3>
+                    <p>Solveig Grau<br>
+                    +33 6 19 22 46 46<br>
+                    VillaAngelus83@gmail.com</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Hurtiglinker</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Hjem</a></li>
+                        <li><a href="bilder.html">Bilder</a></li>
+                        <li><a href="fasiliteter.html">Fasiliteter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Villa Angelus. Alle rettigheter forbeholdt.</p>
+                <p class="disclaimer">Informasjonsside - Ingen online bestilling. Kun direkte kontakt.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Kontaktskjema funksjonalitet
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    // Simuler sending
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sender...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        // I en virkelig applikasjon ville dette være en PHP/backend-tilkobling
+                        // Her simulerer vi bare en vellykket sending
+                        
+                        // Lag e-post lenke med skjemadata
+                        const formData = new FormData(contactForm);
+                        const name = formData.get('name');
+                        const email = formData.get('email');
+                        const subject = formData.get('subject');
+                        const message = formData.get('message');
+                        const arrival = formData.get('arrival');
+                        const departure = formData.get('departure');
+                        const guests = formData.get('guests');
+                        
+                        // Lag e-post kropp
+                        const emailBody = `
+Forespørsel fra Villa Angelus nettside:
+
+Navn: ${name}
+E-post: ${email}
+Emne: ${subject}
+Ankomstdato: ${arrival || 'Ikke spesifisert'}
+Avreisedato: ${departure || 'Ikke spesifisert'}
+Antall gjester: ${guests || 'Ikke spesifisert'}
+
+Melding:
+${message}
+                        `;
+                        
+                        // Lag e-post lenke
+                        const mailtoLink = `mailto:VillaAngelus83@gmail.com?subject=Forespørsel fra ${name}&body=${encodeURIComponent(emailBody)}`;
+                        
+                        // Vis bekreftelse og tilby å åpne e-postklient
+                        if (confirm('Takk for din melding! For å fullføre forespørselen, vil vi åpne e-postklienten din. Klikk OK for å fortsette.')) {
+                            window.open(mailtoLink, '_blank');
+                        }
+                        
+                        // Tilbakestill skjema
+                        contactForm.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Vis ekstra bekreftelse
+                        alert('Din melding er klar for sending! Hvis e-postklienten ikke åpnet automatisk, send e-post direkte til VillaAngelus83@gmail.com');
+                        
+                    }, 1500);
+                });
+            }
+            
+            // Dato input hjelp
+            const dateInputs = document.querySelectorAll('input[placeholder*="dato"]');
+            dateInputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    if (this.value === '') {
+                        this.type = 'text';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
